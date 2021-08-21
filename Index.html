@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="Subgêneros, Vertentes, Hip Hop">
+    <meta name="description" content="Os subgêneros do Hip Hop">
+    <meta name="author" content="Grifo">
+    <meta http-equiv="refresh" content="60">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Trap, Drill e o Grime</title>
+    <link rel="shortcut icon" href="Imagem/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="Estilo/Style.css">
+    <script src="https://kit.fontawesome.com/c85f3445b4.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="fundo">
+    <!-- CABEÇALHO -->
+    <header class="cabecalho">
+        <a href="Index.html"><img src="Imagem/WAV.gif" alt="Logo WAV" title="WAV"></a>
+        <!-- MENU  -->
+        <ul class=menu>
+            <li><a href="rap.html">Rap</a></li>
+            <li><a href="trap.html">Trap</a></li>
+            <li><a href="drill.html">Drill</a></li>
+            <li><a href="grime.html">Grime</a></li>
+            <li><a href="rnb.html">R&B</a> </li>
+        </ul>
+    </header>
+
+    <!-- PRINCIPAL  -->
+    <main class="principal">
+        <div class="lista">
+            <ul class="programas">
+                <h1>Conheça os Sofwares de Produção Musical</h1>
+                <li><a href="https://www.image-line.com/">
+                        <h2>FL Studio</h2><img src="Imagem/flstudio.png" alt="flstudio"> </a</li> <li><a
+                            href="https://filmora.wondershare.net/pt-br/editor-de-video-new/ppc/?gclid=CjwKCAjw3_KIBhA2EiwAaAAlijHAOYLB2gQfOMSDm68PkUmLhOrnIXN4c3ZAUSOBjlWH_HGNf_sIsBoCYukQAvD_BwE">
+                            <h2>Filmora 9</h2><img src="Imagem/filmora.png" alt="filmora">
+                        </a> </li>
+                <li><a href="https://www.apple.com/br/ios/garageband/">
+                        <h2>Garage Band</h2><img src="Imagem/garageband.png" alt="garageband">
+                    </a></li>
+                <li><a
+                        href="https://get.output.com/arcade/music?exp=logic27&campaignid=13539761401&adgroupid=122280069743&utm_medium=cpc&utm_source=google&utm_campaign=13539761401&keyword=logic%20x%20pro&gclid=CjwKCAjw3_KIBhA2EiwAaAAlikfwx6AxFh4uFM96DMSsa-VeHkFWJ_7_7UX6i5FXDQfovBb6F6zFChoCxhgQAvD_BwE">
+                        <h2>Logic X Pro</h2><img src="Imagem/logicxpro.png" alt="logicxpro">
+                    </a></li>
+            </ul>
+        </div>
+
+        <div class="instrumentos">
+            <h1>Conheça os elementos mais usados nos Beats</h1>
+            <ul>
+
+                <li>
+                    <h2 class="elementos">Kick</h2>
+                    <audio id="kickA" src="Songs/kick.wav"></audio>
+                    <button id="kickB"><i class="fas fa-drum"></i></button>
+                </li>
+
+                <li>
+                    <h2 class="elementos">Hit Hat</h2>
+                    <audio id="hithatA" src="Songs/hh.wav"></audio>
+                    <button id="hithatB"><i class="fas fa-drum"></i></button>
+                </li>
+
+                <li>
+                    <h2 class="elementos">Clap</h2>
+                    <audio id="clapA" src="Songs/clap.wav"></audio>
+                    <button id="clapB"><i class="fas fa-drum"></i></button>
+                </li>
+
+                <li>
+                    <h2 class="elementos">Crash</h2>
+                    <audio id="crashA" src="Songs/crash.wav"></audio>
+                    <button id="crashB"><i class="fas fa-drum"></i></button>
+                </li>
+
+                <li>
+                    <h2>Open Hit Hat</h2>
+                    <audio id="openhithatA" src="Songs/oH.wav"></audio>
+                    <button id="openhithatB"><i class="fas fa-drum"></i></button>
+                </li>
+
+
+                <li>
+                    <h2 class="elementos">Snare</h2>
+                    <audio id="snareA" src="Songs/snare.wav"></audio>
+                    <button id="snareB"><i class="fas fa-drum"></i></button>
+                </li>
+            </ul>
+        </div>
+
+
+    </main>
+</body>
+
+<script>
+    const ButtonKick = document.querySelector('#kickB');
+    ButtonKick.addEventListener('click', function () {
+        const AudioKick = document.querySelector('#kickA');
+        AudioKick.currentTime = 0
+        AudioKick.play()
+    });
+
+
+    const ButtonHithat = document.querySelector('#hithatB');
+    ButtonHithat.addEventListener('click', function () {
+        const AudioHithat = document.querySelector('#hithatA')
+        AudioHithat.currentTime = 0
+        AudioHithat.play()
+    });
+
+    const ButtonClap = document.querySelector('#clapB');
+    ButtonClap.addEventListener('click', function () {
+        const AudioClap = document.querySelector('#clapA')
+        AudioClap.currentTime = 0
+        AudioClap.play();
+    });
+
+
+    const ButtonCrash = document.querySelector('#crashB');
+    ButtonCrash.addEventListener('click', function () {
+        const AudioCrash = document.querySelector('#crashA')
+        AudioCrash.currentTime = 0
+        AudioCrash.play();
+    });
+
+    const ButtonOpenHithat = document.querySelector('#openhithatB');
+    ButtonOpenHithat.addEventListener('click', function () {
+        const AudioOpenHithat = document.querySelector('#openhithatA')
+        AudioOpenHithat.currentTime = 0
+        AudioOpenHithat.play();
+    });
+
+    const ButtonSnare = document.querySelector('#snareB');
+    ButtonSnare.addEventListener('click', function () {
+        const AudioSnare = document.querySelector('#snareA')
+        AudioSnare.currentTime = 0
+        AudioSnare.play();
+    });
+</script>
+
+</html>
